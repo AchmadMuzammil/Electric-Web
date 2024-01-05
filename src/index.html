@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="shortcut icon" href="/assets/Icon.png" type="image/x-icon">
+    <title>Electric</title>
+</head>
+
+<body class="dark:bg-gray-900">
+    <!-- Navbar -->
+
+    <nav data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+        class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/assets/Icon.png" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Electric</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="#" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#service"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                            us</a>
+                    </li>
+                    <li>
+                        <a href="#testi"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Testimonial</a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                    <li>
+                        <button id="theme-toggle" type="button"
+                            class="group cursor-pointer outline-none hover:rotate-90 duration-300">
+                            <i id="theme-toggle-dark-icon" fill="currentColor"
+                                class="stroke-orange-400 fill-none group-hover:fill-orange-800 group-active:stroke-orange-200 group-active:fill-orange-600 group-active:duration-0 duration-300 hidden fa-regular fa-moon"></i>
+                            <i id="theme-toggle-light-icon" fill="currentColor"
+                                class="stroke-orange-400 fill-none group-hover:fill-orange-800 group-active:stroke-orange-200 group-active:fill-orange-600 group-active:duration-0 duration-300 dark:text-gray-100 hidden fa-regular fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <!-- Home -->
+
+    <section id="home" class="bg-white dark:bg-gray-900">
+        <div class="gap-16 items-center sm:py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"
+                class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <p class="text-xl font-medium text-gray-800 dark:text-gray-200">Innovative Electronics for a Connected
+                    World</p>
+                <h1 class="text-5xl text-gray-950 font-medium pt-4 pb-4 dark:text-white">Elevate Your Lifestyle with
+                    Cutting-Edge Technology</h1>
+                <p class="font-inter dark:text-gray-200">Our state-of-the-art products are designed to seamlessly
+                    integrate into your life, providing you with
+                    unparalleled convenience and efficiency.</p>
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-5">Get
+                    Started <i class="fa-solid fa-arrow-right"></i> </button>
+                <div class="flex gap-10 text-center pt-5">
+                    <ul>
+                        <h1 class="dark:text-gray-300 font-normal text-gray-900 text-3xl">100+</h1>
+                        <p class="dark:text-gray-200 text-base pt-2 text-gray-500">Unit Ready</p>
+                    </ul>
+                    <ul>
+                        <h1 class="dark:text-gray-300 font-normal text-gray-900 text-3xl">20+</h1>
+                        <p class="dark:text-gray-200 text-base pt-2 text-gray-500">Countries Served</p>
+                    </ul>
+                    <ul>
+                        <h1 class="dark:text-gray-300 font-normal text-gray-900 text-3xl">1.2K+</h1>
+                        <p class="dark:text-gray-200 text-base pt-2 text-gray-500">Happy Customers</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid gap-4 h-full justify-center w-full">
+                <img class="sm:w-full w-96 rounded-lg mt-8" src="/assets/hero_image.png" data-aos="fade-down"
+                    data-aos-easing="linear" data-aos-duration="1500" alt="office content 1">
+            </div>
+        </div>
+    </section>
+
+    <!-- End Home -->
+
+    <!-- Service -->
+
+    <section id="service" class="dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl relative">
+            <h1 data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                class="text-2xl sm:text-4xl font-medium leading-10 dark:text-white">Here are Some of Our Best
+                Recent Product</h1>
+            <div class="flex col-span-2 gap-3 mt-5 sm:mt-10">
+                <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                    data-aos-delay="300" class="relative">
+                    <img class="z-20" src="/assets/pict.png" width="100%" alt="">
+                    <div class="absolute p-6 inset-0 z-30">
+                        <button
+                            class="cursor-default text-sm py-1 px-3 rounded-2xl absolute sm:px-7 sm:py-3 sm:rounded-3xl text-white font-bold"
+                            style="background-color: #0C49E5;">New</button>
+                        <div class="mt-14 sm:mt-96">
+                            <h1 class="text-white mb-3 text-sm sm:text-4xl font-medium">Here are Some of Our Best Recent
+                                Product
+                            </h1>
+                            <p class="text-white mb-5 sm:text-2xl text-sm font-light">Here are Some of Our Best Recent
+                                Product </p>
+                        </div>
+                        <button
+                            class="relative sm:py-2 sm:px-8 py-1 px-3 text-sm text-black sm:text-base font-medium sm:font-bold uppercase rounded-[50px] overflow-hidden bg-white transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-800 before:to-blue-600 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0">
+                            Learn more
+                        </button>
+
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex gap-3">
+                        <div data-aos="fade-down-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                            data-aos-delay="300" class="relative">
+                            <img src="/assets/pict-1.png" width="100%" alt="">
+                            <div class="absolute inset-0 sm:p-3 p-1 mt-1 sm:mt-48 justify-center text-center z-30">
+                                <h3 class="text-sm  sm:text-xl font-medium text-white">Exclusive Offer</h3>
+                                <p class="font-light hidden sm:block text-white">discounts off 40% and other special
+                                    bonuses</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-down-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                            data-aos-delay="300" class="relative">
+                            <img src="/assets/pict-2.png" width="100%" alt="">
+                            <div class="absolute inset-0 sm:p-3 p-1 mt-1 sm:mt-48 justify-center text-center z-30">
+                                <h3 class="text-sm font-medium sm:text-xl text-white">Discount Off 42 Million</h3>
+                                <p class="font-light hidden sm:block text-white">It's more economical to buy a bundle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 mt-5 sm:mt-11">
+                        <div data-aos="fade-up-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                            data-aos-delay="300" class="relative">
+                            <img src="/assets/pict-3.png" width="100%" alt="">
+                            <div class="absolute inset-0 p-3 z-30">
+                                <button
+                                    class="cursor-default hidden sm:block absolute px-5 text-l py-2 rounded-3xl text-white font-medium"
+                                    style="background-color: #0C49E5;">New</button>
+                                <div class="sm:mt-52 justify-center text-center">
+                                    <h3 class="text-sm font-medium sm:text-xl text-white">Exclusive Offer</h3>
+                                    <p class="font-light hidden sm:block text-white">discounts off 20% for smartphone
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                            data-aos-delay="300" class="relative">
+                            <img src="/assets/pict-4.png" width="100%" alt="">
+                            <div class="absolute inset-0 p-3  sm:mt-48 justify-center text-center z-30">
+                                <h3 class="text-sm font-medium sm:text-xl text-white">Exclusive Offer</h3>
+                                <p class="font-light hidden sm:block text-white">discounts off 15% and other special
+                                    bonuses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Servic -->
+
+    <!-- About -->
+
+    <section id="about" class="bg-white dark:bg-gray-900">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="50"
+                data-aos-delay="200" class="grid max-w-lg gap-4 mt-8">
+                <img class="w-full rounded-lg" src="/assets/main_pict.png" alt="office content 1">
+            </div>
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <h2 data-aos="fade-up-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                    data-aos-delay="300" class="mb-4 text-4xl font-medium text-gray-900 dark:text-white">About us</h2>
+                <p data-aos="fade-up-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                    data-aos-delay="300" class="mb-4">we're dedicated to revolutionizing the way you experience
+                    electronics. Established in
+                    2020, we've been at the forefront of innovation, consistently delivering cutting-edge technology to
+                    our customers.</p>
+                <h2 data-aos="fade-up-left" data-aos-anchor-placement="center-bottom" data-aos-offset="50"
+                    data-aos-delay="500" class="mb-4 text-2xl font-normal text-gray-900 dark:text-white">Our Mission
+                </h2>
+                <p data-aos="fade-up-left" data-aos-anchor-placement="center-bottom" data-aos-offset="50"
+                    data-aos-delay="500">We are strategists, designers and developers. Innovators and problem solvers.
+                    Small enough to be
+                    simple and quick.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- End about -->
+
+    <!-- Testimonial -->
+
+    <section id="testi" class="dark:bg-gray-900">
+        <div class="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:py-16 lg:px-6 dark:bg-gray-900">
+            <div class="flex justify-between">
+                <ul data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="200"
+                    class="font-medium text-4xl md:text-xl leading-10 mb-10 dark:text-white">
+                    <h1>Happy Customers</h1>
+                </ul>
+                <ul data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="200"
+                    class="cursor-pointer items-center text-center text-blue-600 font-medium">
+                    See All Reviews <i class="fa-solid fa-arrow-right"></i>
+                </ul>
+            </div>
+            <div data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
+                <figure data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="300"
+                    data-aos-delay="100"
+                    class="flex flex-col items-start justify-start p-8 bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+                    <figcaption class="flex items-center justify-center ">
+                        <img class="rounded-full w-9 h-9" src="/assets/Testimonial-1.png" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                            <div>John Smith</div>
+                            <div class="text-sm text-yellow-300 dark:text-gray-400 ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </figcaption>
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                        <p class="my-4">“I recently purchased a washing machine, and I couldn't be happier with the
+                            performance and reliability of the device. The customer support team was also very helpful
+                            in assisting me with any questions I had. Highly recommended!"</p>
+                    </blockquote>
+
+                </figure>
+                <figure data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="300"
+                    data-aos-delay="200"
+                    class="flex flex-col items-start justify-start p-8 bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+                    <figcaption class="flex items-center justify-center ">
+                        <img class="rounded-full w-9 h-9" src="/assets/Testimonial-2.png" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                            <div>Emily Davis</div>
+                            <div class="text-sm text-yellow-300 dark:text-gray-400 ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </figcaption>
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                        <p class="my-4">"I had an issue with my [Product Name], and the technical support team at [Your
+                            Company Name] resolved it promptly and professionally. Their dedication to customer
+                            satisfaction is truly commendable."</p>
+                    </blockquote>
+
+                </figure>
+                <figure data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                    data-aos-delay="300"
+                    class="flex flex-col items-start justify-start p-8 bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+                    <figcaption class="flex items-center justify-center ">
+                        <img class="rounded-full w-9 h-9" src="/assets/Testimonial-3.png" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                            <div>Sarah Johnson</div>
+                            <div class="text-sm text-yellow-300 dark:text-gray-400 ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </figcaption>
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                        <p class="my-4">“I've been a loyal customer of for years, and I continue to be impressed by the
+                            innovation and quality of their products. Their smartphone is a game-changer, and I can't
+                            imagine my life without it.”</p>
+                    </blockquote>
+
+                </figure>
+                <figure data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                    data-aos-delay="400"
+                    class="flex flex-col items-start justify-start p-8 bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+                    <figcaption class="flex items-center justify-center ">
+                        <img class="rounded-full w-9 h-9" src="/assets/Testimonial-4.png" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                            <div>Michael Rodriguez</div>
+                            <div class="text-sm text-yellow-300 dark:text-gray-400 ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </figcaption>
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                        <p class="my-4">“The microwave I purchased exceeded my expectations. The sleek design and
+                            advanced features make it a standout in the market. I've recommended it to all my friends!”
+                        </p>
+                    </blockquote>
+
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Testimonial -->
+
+    <!-- Contact -->
+
+    <section id="contact" class="bg-white dark:bg-gray-900">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h1 data-aos="fade-down-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                        data-aos-delay="400" class="text-5xl mb-4 text-gray-950 font-medium pt-4 pb-4 dark:text-white">
+                        Happy Customers</h1>
+                    <p data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-offset="50"
+                        data-aos-delay="400" class=" dark:text-gray-200">Contact us to explore the world of cutting-edge
+                        electronics and
+                        innovation. Our team is here to assist you with any inquiries, partnerships, or support you may
+                        need. Reach out now!</p>
+                    <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="50"
+                        data-aos-delay="500" class="mt-10">
+                        <button
+                            class="bg-white border hover:bg-gray-300 text-gray-900 font-normal py-2 px-4 rounded-full animate-pulse">
+                            Explore Our Products <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-offset="50" data-aos-delay="400"
+                class="grid gap-4 mt-8 max-w-lg p-4 bg-white border dark:bg-gray-800 dark:border-gray-700 border-gray-200 rounded-lg shadow ">
+                <form class="space-y-6 " action="#">
+                    <div>
+                        <div class="grid md:grid-cols-2 md:gap-6">
+                            <div>
+                                <label for="text"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First
+                                    Name</label>
+                                <input type="text" name="text" id="text"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="text"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last
+                                    Name</label>
+                                <input type="text" name="text" id="text"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                        <input type="password" name="Email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                            required>
+                    </div>
+                    <div class='pb-8'>
+                        <form class="max-w-sm mx-auto">
+                            <label for="message"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                            <textarea id="message" rows="4"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Leave a comment..."></textarea>
+                        </form>
+                    </div>
+                    <button type="submit"
+                        class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Request
+                        a Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Contact -->
+
+    <!-- Footer -->
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                data-aos-delay="400">
+                <h1 class="text-3xl font-medium dark:text-gray-100">Subscribe to our newsletter</h1>
+                <p class="text-gray-500">Subscribe to our newsletter</p>
+            </div>
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                data-aos-delay="500" class="relative mt-6">
+                <input type="email" placeholder="Email address" autocomplete="email" aria-label="Email address"
+                    class="block w-full rounded-full border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 dark:text-neutral-200 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 dark:focus:border-neutral-400 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5" />
+                <div class="absolute inset-y-1 right-1 flex justify-end">
+                    <button type="submit" aria-label="Submit"
+                        class="flex aspect-square h-full w-32 items-center justify-center rounded-full bg-blue-600 text-white transition hover:bg-blue-800">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                    data-aos-delay="400" class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="/assets/Icon.png" class="h-8" alt="Flowbite Logo" />
+                        <span
+                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Electric</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2  gap-6 ml-6 sm:gap-6 sm:grid-cols-4">
+                    <div>
+                        <h2 data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="50"
+                            data-aos-delay="400"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Navigation</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Home</a>
+                            </li>
+                            <li data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Services</a>
+                            </li>
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">About us</a>
+                            </li>
+                            <li data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Testimonials</a>
+                            </li>
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="50"
+                            data-aos-delay="400"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Products &
+                            Services</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm ">Smartphones</a>
+                            </li>
+                            <li data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Tablets</a>
+                            </li>
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Audio Sound</a>
+                            </li>
+                            <li data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Watches</a>
+                            </li>
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Smart Switch</a>
+                            </li>
+                            <li data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="50"
+                            data-aos-delay="400"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Shop</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Promo</a>
+                            </li>
+                            <li data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Business
+                                    Shop</a>
+                            </li>
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">FAQs</a>
+                            </li>
+                            <li data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Terms &
+                                    Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="50"
+                            data-aos-delay="400"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Career</a>
+                            </li>
+                            <li data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Company
+                                    Information</a>
+                            </li>
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Business
+                                    Area</a>
+                            </li>
+                            <li data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Newsroom</a>
+                            </li>
+                            <li data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100"
+                                data-aos-delay="400" class="mb-3">
+                                <a href="#" class="dark:text-white hover:underline font-normal text-sm">Member</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400" style="height: 50px;">© 2024 <a
+                    href="#" class="hover:underline">Din's</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+
+    <!-- script -->
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</body>
+
+</html>
